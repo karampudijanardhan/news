@@ -1,0 +1,51 @@
+
+.Form-Rigester{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.Rest-password{
+    width: 300px;
+    height: 300px;
+    box-shadow: 3px 4px 5px;
+
+}
+.Rest-password h1{
+    color: tomato;
+    text-align: center;
+    padding-top: 40px;
+}
+.Rest-input{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+     padding: 10px 20px;
+}
+.Rest-input input{
+    width: 100%;
+    height: 40px;
+    border: 2px solid tomato;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: lightcyan;
+}
+.Rest-account p{
+    color: blue;
+    padding: 20px 10px;
+}
+.Rest-account p:hover{
+ color:red;
+}
+.Rest-account a{
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: tomato;
+    padding-left: 80px;
+}
+.Rest-account a:hover{
+    color: blue;
+}

@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-color: white;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.KARAMPUDI{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+}
+.sri h1{
+color: tomato;
+text-align: center;
+margin-top: 150px;
+}
+.page{
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin-top: 20px;
+}
+.page img{
+    width: 200px;
+    height: 200px;
+    border: 3px solid tomato;
+    border-radius: 50%;
+align-items: center;
+animation: animateImage 5s infinite alternate ease-in-out;
+}
+@keyframes animateImage {
+    0% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2) rotate(10deg);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1) rotate(-10deg);
+        opacity: 1;
+    }
+}
+.cont {
+line-height: 30px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+color:black;
+justify-content: center;
+align-items: center;
+
+}
+.cont p{
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    opacity: 0;
+    transform: scale(0.5);
+    animation: suddenAppear 5s ease-out forwards;
+}
+@keyframes suddenAppear {
+    0% { opacity: 0; transform: scale(0.5); }
+    100% { opacity: 1; transform: scale(1); }
+}
+.sri a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color:red;
+    float: right;
+    margin-right: 30px;
+}
+.sri a:hover{
+    color: fuchsia;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+span {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ff4b2b;
+  opacity: 0;
+  display: inline-block;
+}
+
+span:nth-child(1) { animation: fadeIn 1s forwards 0.3s; }
+span:nth-child(2) { animation: fadeIn 1s forwards 0.4s; }
+span:nth-child(3) { animation: fadeIn 1s forwards 0.5s; }
+span:nth-child(4) { animation: fadeIn 1s forwards 0.6s; }
+span:nth-child(5) { animation: fadeIn 1s forwards 0.7s; }
+span:nth-child(6) { animation: fadeIn 1s forwards 0.8s; }
+span:nth-child(7) { animation: fadeIn 1s forwards 0.9s; }
+span:nth-child(8) { animation: fadeIn 1s forwards 0.8s; }
+span:nth-child(9) { animation: fadeIn 1s forwards 0.9s; }
+span:nth-child(10) { animation: fadeIn 1s forwards 0.10s; }
+span:nth-child(11) { animation: fadeIn 1s forwards 0.3s; }
+span:nth-child(12) { animation: fadeIn 1s forwards 0.4s; }
+span:nth-child(13) { animation: fadeIn 1s forwards 0.5s; }
+span:nth-child(14) { animation: fadeIn 1s forwards 0.6s; }
+span:nth-child(15) { animation: fadeIn 1s forwards 0.7s; }
+span:nth-child(16) { animation: fadeIn 1s forwards 0.8s; }
+span:nth-child(17) { animation: fadeIn 1s forwards 0.9s; }
+span:nth-child(18) { animation: fadeIn 1s forwards 0.8s; }
+span:nth-child(19) { animation: fadeIn 1s forwards 0.10s; };

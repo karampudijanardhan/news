@@ -1,0 +1,148 @@
+/* Box container styling */
+.box {
+/* Maximum width for larger screens */
+    /* Center the box horizontally */
+    
+    animation: fadeIn 0.5s ease-in-out; 
+    margin-top:100px;
+    justify-content:center;
+    justify-content:space-around;
+    display:flex;
+    flex-wrap:wrap;
+
+
+    /* Fade-in animation */
+  }
+ 
+  /* Grid layout for cards inside the box */
+  .box {
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    justify-content:center;
+    flex-wrap:wrap;
+    padding:10px 20px;
+    gap: 3.5rem; /* Gap between cards */
+  }
+  
+  /* Responsive grid columns */
+  @media (min-width: 640px) {
+    .box {
+      grid-template-columns: repeat(1, 1fr); /* 1 column for small screens */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .box {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .box {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
+    }
+  }
+  
+  /* Card styling (assuming EverythingCard is a div or similar) */
+  .box > div {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .box > div:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Loader styling */
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px 20px;
+    /* Adjust based on your needs */
+    font-size: 1.5rem;
+    color: #3b82f6;
+    animation: spin 1s linear infinite; /* Spin animation */
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .box {
+      padding: 10px 20px;
+      gap: 2rem; /* Smaller gap for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .box {
+      grid-template-columns: repeat(1, 1fr); /* Always 1 column on very small screens */
+      gap: 10px; /* Minimal gap */
+    }
+  }
+ 
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .pagination-btn {
+    background-color: #3b82f6; /* Blue color for buttons */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination-btn:disabled {
+    background-color: #9ca3af; /* Gray color for disabled buttons */
+    cursor: not-allowed;
+  }
+  
+  .pagination-btn:hover:not(:disabled) {
+    background-color: #2563eb; /* Darker blue on hover */
+  }
+  
+  .pagination p {
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 0.8;
+  }
+  
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #3b82f6;
+  }

@@ -1,0 +1,92 @@
+.login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    background-image: url();
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 20px 10px;
+}
+.Login-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 380px;
+    height: 430px;
+    border: 2px solid tomato;
+    border-radius: 20px;
+    box-shadow: 2px 3px 4px;
+}
+.Login-form h2{
+    color:black;
+    position: relative;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.Login-form-input{
+    color: black;
+    padding: 20px;
+}
+.Login-form-input input{
+    position:relative;
+    width: 100%;
+    height: 40px;
+    padding:20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    color:black;
+    background: transparent;
+    font-weight: 500;
+}
+.remember{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-left: 30px;
+    color: rgb(124, 36, 231);
+}
+.remember:hover{
+    color: black;
+}
+.remember a{
+    color: hotpink;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-right: 20px;
+}
+.remember a:hover{
+    color: lime;
+}
+.dd{
+    width: 200px;
+    height:40px ;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    align-items: center;
+    cursor: pointer;
+    background-color: tomato;
+    font-size: 1.3rem;
+    margin-top: 30px;
+}
+.register{
+text-align: center;
+margin-top: 10px;
+}
+.register a{
+    color: rgb(152, 54, 11);
+    margin-top: 3px;
+    font-size: 1.1rem;
+}
+.register a:hover{
+    color: blue;
+}
+.register p{
+    color: azure;
+}

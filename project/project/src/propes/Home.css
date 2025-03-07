@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-color: black;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 120px;
+    padding: 20px 30px;
+    box-shadow: 1px 2px 4px;
+    
+}
+.checkbut {
+    font-size: 2.5rem;
+    color:tomato;
+    display: none;
+    float: right;
+}
+#check{
+    display: none;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+     justify-content: space-between;
+   }
+   
+   nav a{
+     font-size: 1.5rem;
+     text-decoration: none;
+     cursor: pointer;
+     color:tomato;
+     display: flex;
+     padding: 20px;
+   
+   }
+a:hover,a.active{
+    background: none;
+    color: #0082e6;
+}
+.tt{
+    color: orangered;
+    font-size: 2rem;
+    font-weight: 600;
+    
+}
+nav a:hover{
+    color:lime;
+}
+.jana{
+    width: 180px;
+    height: 35px;
+    position: relative;
+    border: 2px solid orangered;
+    background: transparent;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 10px;
+    color: black;
+}
+.jana:hover{
+background-color: aquamarine;
+}
+.bt{
+    width: 100px;
+    height: 36px;
+    border: 2px solid orangered;
+    background-color:white;
+    color:black;
+    margin-right: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.bt:hover{
+    background-color: tomato;
+}
+.bt:focus{
+    outline: none;
+}
+.jana:focus{
+    outline: none;
+}
+.janardhan{
+    color:white;
+    font-size: 1.1rem;
+    font-weight: 400;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+.janardhan p{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+    gap: 30px;
+    justify-items: center;
+    margin-top: 60px;
+}
+.janardhan a{
+    text-decoration: none;
+}
+.aa{
+    color:white;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.bb{
+    color:orangered;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 60px;     
+}
+.cc{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.janardhan button{
+    width: 150px;
+    height: 40px;
+    border: 2px solid yellow;
+    border-radius: 11px;
+    background-color: orangered;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+  box-shadow: 0 4px 15px ;
+  animation: shake 0.5s infinite;
+}
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+}
+
+
+.janardhan button:hover {
+  animation: none;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    margin-top: 100px;
+    height: 150px;
+    box-shadow: 1px 2px 4px;
+}
+.footer p{
+    color: #fff;
+    font-size: 1.2rem;
+    font-style: oblique;
+    line-height: 30px;
+
+}
+.icons-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    gap: 40px;
+    margin-left: 100px;
+}
+.icons-footer a{
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 890px) {
+    .checkbut {
+        font-size: 2.9rem;
+        color: tomato;
+        display: block;
+        position: relative;
+        margin-left: 100px;
+    }
+      .search{
+        display: none;
+      }
+      #check{
+        display: none;
+      }
+      nav{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+        position: relative;
+          left: -130%;
+          transition: all .5s;
+          top: 40px;
+      }
+      nav a{
+      font-size: 1.5rem;
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 50px;
+      color: blue;
+    
+      
+        
+      }
+      #check:checked~nav{
+       left: 0px;
+      }
+      .janardhan p{
+        font-size: 1.1rem;
+      }
+      .janardhan{
+        margin-top: 270px;
+    }
+    .footer p{
+    color: #fff;
+    font-size: 1.1rem;
+    font-style: oblique;
+    padding: 0px 20px;
+
+}
+.icons-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    gap: 40px;
+    margin-left: 0px;
+}
+.icons-footer a{
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    gap: 20px;
+}
+
+}
