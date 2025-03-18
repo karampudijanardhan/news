@@ -2,78 +2,85 @@ import React from "react";
 
 function Card(props) {
   return (
-    <div className="everything-card mt-10">
-      <div className="everything-card flex flex-wrap p-5 gap-1 mb-1">
-        <b className="title">{props.title}</b>
-        <div className="everything-card-img mx-auto">
-          <img className="everything-card-img" src={props.imgUrl} alt="img" />
+    <div className="everything-card">
+      {/* Main Card Content */}
+      <div className="card-container">
+        {/* Left Section (Image and Title) */}
+        <div className="card-image-section">
+          <b className="card-title">{props.title}</b>
+          <img
+            className="card-image"
+            src={props.imgUrl}
+            alt={props.title}
+          />
         </div>
-        <div className="description">
-          <p className="description-text leading-7">
-            {props.description?.substring(0, 200)}
-          </p>
-        </div>
-        <div className="info">
-          <div className="source-info flex items-center gap-2">
-            <span className="font-semibold">Source:</span>
-            <a
-              href={props.url}
-              target="_blank"
-              className="link underline break-words"
-            >
-              {props.source.substring(0, 70)}
-            </a>
+
+        {/* Right Section (Description and Info) */}
+        <div className="card-content">
+          <div className="description">
+            <p className="description-text">
+              {props.description?.substring(0, 200)}...
+            </p>
           </div>
-          <div className="origin flex flex-col">
-            <p className="origin-item">
-              <span className="font-semibold">Author:</span>
-              {props.author}
-            </p>
-            <p className="origin-item">
-              <span className="font-semibold">Published At:</span>
-              ({props.publishedAt})
-            </p>
+          <div className="info">
+            <div className="source-info">
+              <span className="font-semibold">Source:</span>
+              <a
+                href={props.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link"
+              >
+                {props.source.substring(0, 70)}
+              </a>
+            </div>
+            <div className="origin">
+              <p className="origin-item">
+                <span className="font-semibold">Author:</span> {props.author}
+              </p>
+              <p className="origin-item">
+                <span className="font-semibold">Published At:</span>{" "}
+                {props.publishedAt}
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Added the new card content with styles */}
-      <div className="flex lg:flex-row">
+      {/* Additional Card Content */}
+      <div className="additional-card">
+        {/* Left Image Section */}
         <div
-          className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-          style={{ backgroundImage: `url(${props.imageUrlLeft})` }}
+          className="additional-image"
+          
           title={props.imageLeftTitle}
         ></div>
-        <div className="border rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+
+        {/* Right Content Section */}
+        <div className="additional-content">
           <div className="mb-8">
-            <p className="text-sm text-gray-600 flex items-center">
+            <p className="member-info">
               {props.memberIcon && (
-                <svg
-                  className="fill-current text-gray-500 w-3 h-3 mr-2"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                >
+                <svg className="member-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                   {props.memberIcon}
                 </svg>
               )}
               {props.memberText}
             </p>
-            <div className="text-gray-900 font-bold text-xl mb-2">
-              {props.cardTitle}
-            </div>
-            <p className="text-gray-700 text-base">{props.cardDescription}</p>
+            <div className="card-title-large">{props.cardTitle}</div>
+            <p className="card-description">{props.cardDescription}</p>
           </div>
-          <div className="flex items-center">
+          <div className="author-info">
             {props.authorImage && (
               <img
-                className="w-10 h-10 rounded-full mr-4"
+                className="author-image"
                 src={props.authorImage}
-                alt="Avatar"
+                alt={props.authorName}
               />
             )}
             <div className="text-sm">
-              <p className="text-gray-900 leading-none">{props.authorName}</p>
-              <p className="text-gray-600">{props.publishedDate}</p>
+              <p className="author-name">{props.authorName}</p>
+              <p className="published-date">{props.publishedDate}</p>
             </div>
           </div>
         </div>

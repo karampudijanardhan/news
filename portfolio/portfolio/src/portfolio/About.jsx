@@ -1,4 +1,6 @@
 import React from "react";
+import { Router } from "react-router-dom";
+import { Link } from "react-router-dom";
 const About = () => {
     return (
         <div>
@@ -32,6 +34,7 @@ const About = () => {
             <li>My short-term goal is to find work in a well-know oraganization like yours.</li>
             <li>My long-term goal is to attain a leading postition in my profession</li>
             <li>This is all about me.</li>
+            <Link className="go" to="/Home"> Go To Home</Link>
         </ul>
         </div>
         </div>

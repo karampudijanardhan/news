@@ -22,7 +22,7 @@ function AllNews() {
   useEffect(() => {
     setIsLoading(true);
     setError(null);
-    fetch(`https://news-aggregator-dusky.vercel.app/all-news?page=${page}&pageSize=${pageSize}`)
+    fetch(`https://newsapi.org/v2/everything?&apiKey=$b263778406ff443298734b472a51643d`)
       .then(response => {
         if (response.ok) {
           return response.json();

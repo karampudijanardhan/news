@@ -1,4 +1,6 @@
 import React from "react";
+import { Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const handleClick = () => {
    {
@@ -34,6 +36,7 @@ const Contact=()=> {
             <div>
             <h1>Feel Free To Contact!!</h1>
             <p> Gmail:Contact.janardhankarampudi@gmail.com</p>
+           <Link className="to" to="/Home"><h2>Go To Home</h2></Link> 
             </div>
     <div class="login">
         
@@ -50,7 +53,6 @@ const Contact=()=> {
         <button onClick={handleClick}>SUBMIT</button>
         </div>
 </div>
-
 </div>
 </section>
 </div>

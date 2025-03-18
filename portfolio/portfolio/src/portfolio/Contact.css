@@ -147,6 +147,18 @@ display: inline-block;
 animation: typing 20s steps(30) forwards;
 
 }
+.Contact-me h2{
+    color:blue;
+    font-size:2rem;
+    margin-top:20px;
+}
+.to{
+    text-decoration:none;
+    margin-bottom:200px;
+}
+.Contact-me h2:hover{
+    color:orange;
+}
 @keyframes typing {
     from { width: 0; }
     to { width: 100%; }
@@ -164,4 +176,9 @@ font-weight: 200px;
 font-style:oblique;
 justify-content: center;
 margin-top: 20px;
+}
+@media only screen and (max-width: 890px) {
+    .to{
+        display:none;
+    }
 }

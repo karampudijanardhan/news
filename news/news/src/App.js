@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 import "./Components/Header.css";
-import "./Components/AllNews.css"
+import "./Components/AllNews.css";
+import "./Components/EverythingCard.css"
 import Header from "./Components/Header";
 import AllNews from "./Components/AllNews";
 // import Footer from "./components/Footer";
